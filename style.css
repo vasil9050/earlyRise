@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/EARLY_RISE/1.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Flamenco', cursive;
+}
+
+.main-content{
+    position: absolute;
+    width: 1180px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%,-50%)
+}
+
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+.logo{
+    height: 120px;
+    width: auto;
+    float: left;
+    margin : 20px;
+}
+
+
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a:hover{
+    border-bottom: 1px solid #7ef58f;
+}
+.main-nav li a{
+    padding: 5px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+h1{
+    columns: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2;
+}
+
+.btn-full:hover{
+    background-color: rgba(229, 229, 229, 0.5);
+    color: #7ef58f;
+    border: 1px solid #7ef58f;
+}
+
+.btn-full{
+    background-color: transparent;
+    color: #7ef58f;
+    border: 1px solid #7ef58f;
+}
+
+.btn-nxt:hover{
+    background-color: rgba(126, 245, 143, 0.5);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-nxt{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff
+}
+
+.change{
+    animation: colorchange 1s infinite;
+}
+
+@keyframes colorchange{
+    0%{color: #ffffff;}
+    25%{color: #7fff90}
+    50%{color: #6fd67d}
+    100%{color: #5dba69}
+}
+
+.toggle{
+    display: none;
+}
+
+/* ////////////////////responsive querry */
+
+@media only screen and (max-width: 1180px){
+    .main-content{
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+@media only screen and (max-width: 998px){
+    h1{font-size: 200%}
+}
+
+
+
+@media only screen and (max-width: 768px){
+    h1{font-size: 180%;}
+    .main-nav{display: none;}
+    .toggle{
+        display: inline-block;
+        color: #fff;
+        float: right;
+        margin-top: 30px;
+        margin-right: 20px;
+    }
+
+    .main-nav{
+        float: left;
+    }
+    .main-nav li{
+        display: block;
+        margin-top: 10px;
+
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .btn-full{
+        margin-bottom: 20px;
+    }
+    h1{font-size: 160%}
+    .logo{  height: 80px;
+        width: auto;
+        float: left;
+        margin : 20px;}
+}
