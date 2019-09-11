@@ -8,7 +8,7 @@ body{
     font-size: 20px;
     overflow-x: hidden;
     color: white;
-    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/EARLY_RISE/1.jpg');
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('1.jpg');
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
